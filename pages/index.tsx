@@ -1,5 +1,5 @@
-import AppLayout from "../layouts/AppLayout";
-import "./index.scss";
+import AppLayout from '../layouts/AppLayout';
+import './index.scss';
 
 const IndexPage = () => (
   <AppLayout title="Home">
