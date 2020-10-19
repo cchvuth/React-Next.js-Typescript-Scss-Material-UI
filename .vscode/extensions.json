@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "rbbit.typescript-hero",
+    "CoenraadS.bracket-pair-colorizer",
+    "michelemelluso.code-beautifier",
+    "mrmlnc.vscode-scss",
+    "stringham.move-ts",
+    "esbenp.prettier-vscode",
+    "ms-vscode.vscode-typescript-tslint-plugin",
+    "EditorConfig.EditorConfig",
+    "eamodio.gitlens",
+    "streetsidesoftware.code-spell-checker",
+    "mkxml.vscode-filesize",
+    "formulahendry.auto-rename-tag"
+  ]
+}
