@@ -1,7 +1,7 @@
-import Link from "next/link";
-import * as React from "react";
-import { User } from "../interfaces/User";
-import "./GitHubUserListDetail.scss";
+import Link from 'next/link';
+import * as React from 'react';
+import { User } from '../interfaces/User';
+import './GitHubUserListDetail.scss';
 
 type Props = {
   item: User;

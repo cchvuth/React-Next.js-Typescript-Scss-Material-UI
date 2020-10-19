@@ -1,4 +1,4 @@
-@import "../scss/global";
+@import '../scss/global';
 
 nav {
   background-color: #8bc6ec;
@@ -9,7 +9,7 @@ nav {
     margin: 20px;
     font-size: 1.3rem;
 
-    &[data-is-active="true"] {
+    &[data-is-active='true'] {
       text-decoration: underline;
       font-weight: 900;
     }

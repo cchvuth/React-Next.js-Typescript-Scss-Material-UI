@@ -1,5 +1,5 @@
-import axios from "axios";
-import { User } from "../interfaces/User";
+import axios from 'axios';
+import { User } from '../interfaces/User';
 
 // Export request handlers as service so it can be reused;
 export class GitHubUserService {
@@ -9,8 +9,8 @@ export class GitHubUserService {
     return axios.get<User[]>(`${this.api}/users`, {
       params: {
         page,
-        per_page: perPage,
-      },
+        per_page: perPage
+      }
     });
   }
 

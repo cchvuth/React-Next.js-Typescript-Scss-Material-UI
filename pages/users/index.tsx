@@ -1,25 +1,25 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-import { User } from "../../interfaces/User";
-import AppLayout from "../../layouts/AppLayout";
-import GitHubUserList from "../../components/GitHubUserList";
-import { GitHubUserService } from "../../services/github-user.service";
-import localForage from "localforage"; // An indexedDB wrapper to simplify usage
-import { useEffect, useState } from "react";
+import { User } from '../../interfaces/User';
+import AppLayout from '../../layouts/AppLayout';
+import GitHubUserList from '../../components/GitHubUserList';
+import { GitHubUserService } from '../../services/github-user.service';
+import localForage from 'localforage'; // An indexedDB wrapper to simplify usage
+import { useEffect, useState } from 'react';
 
 const Users = () => {
   const [users, setUsers] = useState<User[]>();
 
   useEffect(() => {
     // Cache the list in IndexedDB
-    localForage.getItem("users", (_, stored: any) => {
+    localForage.getItem('users', (_, stored: any) => {
       if (stored) {
         return setUsers(stored);
       }
 
       GitHubUserService.getUsers().then((res) => {
         setUsers(res.data);
-        localForage.setItem("users", res.data);
+        localForage.setItem('users', res.data);
       });
     });
   }, []); // Add [] to run once
