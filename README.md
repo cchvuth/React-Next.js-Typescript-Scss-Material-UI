@@ -27,8 +27,8 @@
 
 ## Folder Structure
 
-    - layouts: main app layputs
-    - pages: route url will follow folder structure
+    - layouts: main app layouts
+    - pages: route url will follow folder structure and file name
     - components: reusable components
     - scss: global and reusable styles
     - public: will serve as static
