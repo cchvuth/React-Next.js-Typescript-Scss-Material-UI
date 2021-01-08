@@ -3,6 +3,7 @@
 import React from 'react';
 import Link, { LinkProps } from 'next/link';
 import { useRouter } from 'next/router';
+import './ActiveLink.scoped.scss';
 
 const ActiveLink: React.FC<LinkProps> = (props) => {
   const router = useRouter();

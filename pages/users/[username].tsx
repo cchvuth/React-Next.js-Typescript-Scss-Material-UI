@@ -4,6 +4,7 @@ import GitHubUserListDetail from '../../components/GitHubUserListDetail';
 import { GitHubUserService } from '../../services/github-user.service';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
+import './[username].scoped.scss';
 
 const UserDetail = () => {
   const router = useRouter(); // To get route query

@@ -6,6 +6,7 @@ import GitHubUserList from '../../components/GitHubUserList';
 import { GitHubUserService } from '../../services/github-user.service';
 import localForage from 'localforage'; // An indexedDB wrapper to simplify usage
 import { useEffect, useState } from 'react';
+import './index.scoped.scss';
 
 const Users = () => {
   const [users, setUsers] = useState<User[]>();

@@ -1,0 +1,10 @@
+a {
+  color: white !important;
+  margin: 20px;
+  font-size: 1.3rem;
+
+  &[data-is-active='true'] {
+    text-decoration: underline;
+    font-weight: 900;
+  }
+}

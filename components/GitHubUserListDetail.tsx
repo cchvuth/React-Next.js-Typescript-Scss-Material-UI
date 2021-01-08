@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import * as React from 'react';
 import { User } from '../interfaces/User';
-import './GitHubUserListDetail.scss';
+import './GitHubUserListDetail.scoped.scss';
 
 type Props = {
   item: User;

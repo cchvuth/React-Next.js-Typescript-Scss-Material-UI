@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import Head from 'next/head';
-import './AppLayout.scss';
+import './AppLayout.scoped.scss';
 import ActiveLink from '../components/ActiveLink';
 
 type Props = {
